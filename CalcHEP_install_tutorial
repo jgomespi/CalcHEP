@@ -1,0 +1,48 @@
+Install 3.8.7 version by João Pedro Pinheiro and Matheus Macedo (NOV/2020) --> 
+
+vá ao site: https://theory.sinp.msu.ru/~pukhov/calchep.html e clica em "Current version 3.8.7" 
+
+Clique em "Code download", baixando o CalcHEP compactado (calchep_3.8.7.tgz). 
+
+Entre no terminal, no diretório onde se encontra o arquivo baixado, e faça os seguintes comandos:
+
+$ tar -zxvf calchep_3.8.7.tgz
+$ cd calchep_3.8.7
+$ make
+
+Atenção, neste ponto pode ocorrer um problema com a criação de um link simbólico no diretório work/bin. 
+O erro é algo como:
+
+ln: falha ao criar link simbólico '~/calchep_3.8.7/work/bin': Arquivo existe
+make: * [Makefile:31: COMPILE] Erro 1
+
+Para resolver isso, abra o arquivo MakeFile, onde você deve encontrar na linha 31:
+
+@if( test ! -d work/bin) then ln -s `pwd`/bin `pwd`/work/bin ; fi
+
+Mude para:
+
+@if( test ! -d work/bin) then ln -s `pwd`/work/bin `pwd`/bin; fi
+
+Tente novamente o comando:
+
+$ make
+
+
+Abra o arquivo .bashrc fazendo:
+
+gedit ~/.bashrc
+
+No fim deste arquivo, adicione:
+
+export CALCHEP=/home/joao/calchep_3.8.7
+
+Salve o arquivo.
+
+Para criar um diretório de trabalho, no diretório $CALCHEP faça:
+
+./mkWORKdir $CALCHEP/workdir
+
+para abrir o programa, entre no diretório workdir e faça:
+
+./calchep &
