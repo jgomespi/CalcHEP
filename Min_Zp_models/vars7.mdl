@@ -1,0 +1,39 @@
+B-L (Full fast)
+ Variables 
+ Name | Value       |>  Comment                                   <|
+EE    |0.31333      |Electromagnetic coupling constant (<->1/128)
+GG    |1.117        |Strong coupling constant (Z point)  (PDG-94)
+SW    |0.474        |sin of the Weinberg angle (PDG-94,"on-shell")
+s12   |0.221        |Parameter of C-K-M matrix (PDG-94)
+s23   |0.04         |Parameter of C-K-M matrix (PDG-94)
+s13   |0.0035       |Parameter of C-K-M matrix (PDG-94)
+g1p   |0.2          |B-L gauge coupling
+gt    |-0.1         |g~tilde mixing gauge coupling
+MZp   |1500         |Extra Zp mass
+Sa    |0.1          |Sin of scalar mixing angle
+wms   |80.292       |W boson mass
+wZ    |2.502        |width of Z boson
+wW    |2.094        |width of W boson
+%wZp  |80           |width of Zprime boson
+Me    |0.000511     |mass of electron
+Mm    |0.1057       |mass of muon
+Mt    |1.777        |mass of tau-lepton
+Ml1   |1e-09        |mass of lt-neutrino-1
+Ml2   |1e-09        |mass of lt-neutrino-2
+Ml3   |1e-09        |mass of lt-neutrino-3
+Mn1   |200          |mass of hv-neutrino-1
+%wn1  |10           |width of hv-neutrino-1
+Mn2   |200          |mass of hv-neutrino-2
+%wn2  |10           |width of hv-neutrino-2
+Mn3   |200          |mass of hv-neutrino-3
+%wn3  |10           |width of hv-neutrino-3
+Mc    |1.3          |mass of c-quark
+Ms    |0.2          |mass of s-quark
+Mtop  |170          |mass of t-quark
+wtop  |1.442        |width of t-quark
+Mb    |4.3          |mass of b-quark
+MH1   |120          |mass of Light Higgs
+%wH1  |1.5          |width of Light Higgs
+MH2   |450          |mass of Heavy Higgs
+%wH2  |10           |width of Heavy Higgs
+====================================================================
